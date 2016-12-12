@@ -1,14 +1,19 @@
 package models;
 
 import java.util.*;
+
 import javax.persistence.*;
 
 import com.avaje.ebean.Model;
 
-
+import play.data.validation.*;
 
 import com.avaje.ebean.*;
 
+/**
+ *  entity managed by Ebean
+ */
+@Entity 
 
 public class Cliente extends Model {
 	 private static final long serialVersionUID = 1L;
@@ -20,8 +25,11 @@ public class Cliente extends Model {
 	    public String name;
 	 
 	    public String apellido;
+	    
 	    public String ncedula;
+	    
 	    public String  nmesa;
+	    
 	    public String  norden;
 	    
 	  	    
